@@ -1,0 +1,95 @@
+h2{
+  text-align: center;
+  text-transform: uppercase;
+}
+.parent{
+  width:800px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2% auto;
+}
+body{
+  background-color: blue;
+}
+.a1{
+  width: 56%;
+  margin:1%;
+  background-color: #fff;
+  padding: 1%;
+  border-radius: 15px;
+}
+.a2{
+  width: 36%;
+  margin:1%;
+  background-color: #fff;
+    padding: 1%;
+    border-radius: 15px;
+}
+.a3,
+.a4,
+.a5{
+  width: 29.3%;
+  margin:1%;
+  background-color: #fff;
+    padding: 1%;
+border-radius: 15px;
+}
+.a6,
+.a7,
+.a8,
+.a9{
+  width: 46%;
+  margin:1%;
+  background-color: #fff;
+    padding: 1%;
+    border-radius: 15px;
+}
+@media only screen (min-width:320px) and (max-width:639px){
+  .parent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    margin:2% auto;
+  }
+  .a1,
+  .a2,
+  .a3,
+  .a4,
+  .a5,
+  .a6,
+  .a7,
+  .a8,
+  .a9{
+    width: 90%;
+    margin: 1% auto;
+  }
+}
+@media only screen (min-width:640px) and (max-width:799px){
+  .parent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:2% auto;
+  }
+  .a1,
+  .a6{
+    width: 96%;
+  }
+  .a2,
+  .a3,
+  .a4,
+  .a5{
+    width:46%;
+  }
+.a7,
+.a8,
+.a9{
+  width: 29.3%;
+}
+}
